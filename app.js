@@ -27,6 +27,8 @@ headerMenu.addEventListener('click', () => {
 })
 xmark.addEventListener('click', () => {
   getDate()
+  overlayTwo.classList.toggle('overlay')
+
 })
 document.addEventListener('keydown', (e)=> {
   if(e.key == 'Escape'){ 
