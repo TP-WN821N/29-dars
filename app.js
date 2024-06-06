@@ -1,5 +1,6 @@
 const header = document.querySelector('.header')
 const overlay = document.getElementById('overlay')
+const overlayTwo = document.getElementById('overlay_two')
 const xmark = document.getElementById('xmark')
 const headerMenu = document.querySelector('.header_menu')
 const headerRight = document.querySelector('.header_right')
@@ -19,8 +20,10 @@ const getDate = () => {
 
 headerMenu.addEventListener('click', () => {
   headerRight.style.display = "block";
-  overlay.classList.add('overlay')
+  overlay.classList.toggle('overlay')
+  overlayTwo.classList.toggle('overlay')
   headerMenu.style.display = "none";
+  header.style.backdropFilter = "blur(8px)"
 })
 xmark.addEventListener('click', () => {
   getDate()
@@ -28,8 +31,12 @@ xmark.addEventListener('click', () => {
 document.addEventListener('keydown', (e)=> {
   if(e.key == 'Escape'){ 
     getDate()
+    overlayTwo.classList.toggle('overlay')
+
   }
 })
 overlay.addEventListener('click', ()=> {
   getDate()
+  overlayTwo.classList.toggle('overlay')
+
 })

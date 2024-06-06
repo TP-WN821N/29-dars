@@ -26,6 +26,7 @@ body {
   left: 0;
   background-color: #2B2B2B;
   z-index: 5;
+  backdrop-filter: blur(5px);
 }
 .header_shrink {
   box-shadow: 0 6px 10px #858282;
@@ -117,6 +118,7 @@ body {
     }
     position: relative;
     .header_right {
+      z-index: 999;
       display: none;
       box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
       position: absolute;
