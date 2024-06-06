@@ -1,0 +1,114 @@
+.trending {
+  color: #fff;
+  padding: 80px 115px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .trending_info {
+    padding-bottom: 60px;
+    .trending_title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45.6px;
+      padding-bottom: 10px;
+    }
+    .trending_desc {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 35.2px;
+    }
+  }
+  .trending_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .trending_item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 32%;
+      .trend_item_imgs {
+        display: flex;
+        gap: 3.5%;
+        align-items: center;
+        img {
+          width: 31%;
+        }
+      }
+      .trend_item_title {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30.8px;
+      }
+      .header_item_desc {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .trending {
+    padding: 40px;
+    .trending_info {
+      padding-bottom: 30px;
+      .trending_title {
+        font-size: 34px;
+        line-height: 38px;
+      }
+      .trending_desc {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+    .trending_list {
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .trending {
+    padding: 40px 30px;
+    .trending_info {
+      padding-bottom: 28px;
+      .trending_title {
+        font-size: 30px;
+        line-height: 34px;
+      }
+      .trending_desc {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .trending {
+    .trending_list {
+      .trending_item:nth-child(1) {
+        width: 48%;
+      }.trending_item:nth-child(2) {
+        width: 48%;
+      }
+      .trending_item:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .trending {
+    .trending_info {
+      text-align: center;
+    }
+    .trending_list {
+      .trending_item:nth-child(1) {
+        width: 90%;
+      }.trending_item:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
