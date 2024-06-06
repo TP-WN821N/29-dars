@@ -1,6 +1,7 @@
 @use './hero';
 @use './trending';
 @use './creators';
+@use './browse';
 
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
 
@@ -131,7 +132,7 @@ body {
       .sidebar {
         color: #fff;
         width: 100%;
-        padding: 14px 30px;
+        padding: 14px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
