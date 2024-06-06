@@ -446,7 +446,10 @@
     padding: 30px;
     gap: 20px;
   }
-  .creators .creators_info .creators_btn {
+  .creators_info .creators_text {
+    width: 90%;
+  }
+  .creators_info .creators_btn {
     display: none;
   }
   .creators .creators_box .creators_item {
